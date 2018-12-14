@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class FirstWeekTask {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         int x = readInt("Введите x");
         int y = readInt("Введите y");
-        System.out.println("x + y = " + (x + y));
+        System.out.println("x + y = " + (x + y) + "\n");
     }
 
     private static int readInt(String x) {
@@ -13,17 +13,9 @@ public class FirstWeekTask {
             try {
                 Scanner s = new Scanner(System.in);
                 return Integer.parseInt(s.nextLine());
-            } catch (Exception e) {
+            } catch (Exception e){
                 System.out.println("Вы ввели не число! Попробуйте ещё раз.");
             }
         }
     }
-    /*
-    Дан список с именами файлов List<String>, необходимо их переименовать: добавить в начало номер списка.
-    a.txt => 0a.txt
-    b.txt => 1b.txt
-    Подробная обработка всех исключений. Если файл не найден, если не удалось переименовать и т.д.
-    */
-
-
 }
